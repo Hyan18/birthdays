@@ -8,4 +8,10 @@ class BirthdayList
     @list << {name: friend, birthday: date}
   end
 
+  def show
+    @list.each { |friend|
+        puts("#{friend[:name]} has their birthday on #{friend[:birthday]}")
+      }
+  end
+
 end

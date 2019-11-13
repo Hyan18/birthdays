@@ -1,7 +1,11 @@
 class BirthdayList
 
+  def initialize
+    @list = []
+  end
+
   def add(friend, date)
-    [{name: friend, birthday: date}]
+    @list << {name: friend, birthday: date}
   end
 
 end
